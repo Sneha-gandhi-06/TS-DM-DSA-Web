@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telangana Disaster Management - DSA Web Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header><h1>TS-DM Web Simulation</h1></header>
+
+    <main>
+        <section id="setup">
+            <h2>🌍 Network Setup</h2>
+            <button onclick="initializeGraph()">Initialize Default Telangana Network</button>
+            <p id="city-list">Current Cities: (Add cities and roads here)</p>
+            </section>
+
+        <section id="affected-areas">
+            <h2>⚠️ Disaster Zones & Status</h2>
+            <select id="city-selector"></select>
+            <button onclick="toggleAffected()">Toggle Affected Status</button>
+            <p id="affected-list"></p>
+        </section>
+
+        <section id="bfs-path">
+            <h2>🛣️ Shortest Rescue Route (BFS)</h2>
+            <label>Start City: <input type="text" id="bfs-start" value="Hyderabad"></label>
+            <label>Destination City: <input type="text" id="bfs-dest" value="Warangal"></label>
+            <button onclick="runBFS()">Find Path</button>
+            <p id="bfs-result" class="result"></p>
+        </section>
+
+        <section id="dfs-zones">
+            <h2>🔍 Reachable Safe Zones (DFS)</h2>
+            <label>Start City for Survey: <input type="text" id="dfs-start" value="Khammam"></label>
+            <button onclick="runDFS()">Show Reachable</button>
+            <p id="dfs-result" class="result"></p>
+        </section>
+
+        </main>
+
+    <script src="graph.js"></script> <script src="main.js"></script> </body>
+</html>
