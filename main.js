@@ -61,4 +61,8 @@ window.runDFS = function() {
 window.initializeGraph = initializeGraph;
 window.toggleAffected = toggleAffected;
 window.runBFS = runBFS;
+<<<<<<< HEAD
 window.runDFS = runDFS;
+=======
+window.runDFS = runDFS;
+>>>>>>> 127e75def86fce91d6533edc10f617fe19455596
