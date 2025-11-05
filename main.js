@@ -57,3 +57,8 @@ window.runDFS = function() {
         resultElement.textContent = `❌ No reachable safe zones found from ${start}. (Isolated or surrounded by affected areas).`;
     }
 }
+// Expose functions needed by the HTML 'onclick' attributes
+window.initializeGraph = initializeGraph;
+window.toggleAffected = toggleAffected;
+window.runBFS = runBFS;
+window.runDFS = runDFS;
